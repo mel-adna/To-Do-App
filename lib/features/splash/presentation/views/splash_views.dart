@@ -13,9 +13,13 @@ class _SplashViewsState extends State<SplashViews> {
   void initState() {
     super.initState();
     Future.delayed(Duration(seconds: 2), () {
-      Navigator.push(context, MaterialPageRoute(builder: (context) => LoginView()));
+      Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => LoginView()),
+      );
     });
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -23,9 +27,13 @@ class _SplashViewsState extends State<SplashViews> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-          Image.asset('assets/images/app_logo.png'),
-          Text('UpTodo', style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),),
-        ],),
+            Image.asset('assets/images/app_logo.png'),
+            Text(
+              'UpTodo',
+              style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
+            ),
+          ],
+        ),
       ),
     );
   }
