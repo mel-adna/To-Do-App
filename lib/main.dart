@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:to_do_app/features/auth/presentation/views/login_view.dart';
-import 'package:to_do_app/features/splash/presentation/views/splash_views.dart';
 
 void main() {
   runApp(const ToDoList());
